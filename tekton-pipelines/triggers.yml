@@ -29,7 +29,7 @@ spec:
     - name: repo-url
       value: https://github.com/ender6/bz-homework.git
     - name: image-reference
-      value: docker.io/enderguler/tektonhomework
+      value: enderguler/tektonhomework
 
 ---
 apiVersion: triggers.tekton.dev/v1alpha1
@@ -43,7 +43,7 @@ spec:
       default: https://github.com/ender6/bz-homework.git
     - name: image-reference
       description: The Docker image reference
-      default: docker.io/enderguler/tektonhomework
+      default: enderguler/tektonhomework
   resourcetemplates:
     - apiVersion: tekton.dev/v1beta1
       kind: PipelineRun
